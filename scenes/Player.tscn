@@ -1,9 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://b1xwyabboxfe"]
+[gd_scene load_steps=6 format=3 uid="uid://b1xwyabboxfe"]
 
 [ext_resource type="Script" uid="uid://ch805owshix2v" path="res://scripts/player_controller.gd" id="1_p0vlq"]
 [ext_resource type="Texture2D" uid="uid://fs1qsp0ujho3" path="res://assets/dev/png-transparent-pokemon-red-and-blue-pokemon-firered-and-leafgreen-pokemon-heartgold-and-soulsilver-sprite-sprite-text-rectangle-symmetry-585838136.png" id="2_v6fml"]
+[ext_resource type="Script" uid="uid://v0cu3ealxso0" path="res://scenes/actionable_finder.gd" id="3_3li8b"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rwgxs"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_v6fml"]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 scale = Vector2(2, 2)
@@ -16,3 +19,12 @@ shape = SubResource("CapsuleShape2D_rwgxs")
 position = Vector2(-0.9999962, 0)
 scale = Vector2(0.021739129, 0.030706517)
 texture = ExtResource("2_v6fml")
+
+[node name="actionable_finder" type="Area2D" parent="."]
+scale = Vector2(2, 2)
+collision_layer = 0
+collision_mask = 16
+script = ExtResource("3_3li8b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="actionable_finder"]
+shape = SubResource("CircleShape2D_v6fml")
