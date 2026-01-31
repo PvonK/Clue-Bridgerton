@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var walking_speed: float = 1
+@export var walking_speed: float = 2
 
 func _process(delta: float) -> void:
 	velocity.x = 0

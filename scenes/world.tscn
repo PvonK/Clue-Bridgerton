@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://b3xqishcrfpjd"]
+[gd_scene load_steps=4 format=3 uid="uid://b3xqishcrfpjd"]
 
 [ext_resource type="PackedScene" uid="uid://b1xwyabboxfe" path="res://scenes/Player.tscn" id="1_nnsk1"]
 [ext_resource type="Texture2D" uid="uid://pm5vqovjy58g" path="res://assets/dev/S.S._Anne_Ballroom-3556446786.png" id="2_rwgxs"]
+[ext_resource type="PackedScene" uid="uid://c4a7hldv5kyql" path="res://scenes/npc.tscn" id="3_4wyf3"]
 
 [node name="world" type="Node2D"]
 
@@ -12,8 +13,14 @@ offset_right = 1931.0
 offset_bottom = 1414.041
 texture = ExtResource("2_rwgxs")
 
-[node name="PLayer" parent="." instance=ExtResource("1_nnsk1")]
-
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(5, 1)
 anchor_mode = 0
+
+[node name="Actors" type="Node2D" parent="."]
+
+[node name="PLayer" parent="Actors" instance=ExtResource("1_nnsk1")]
+position = Vector2(750, 600)
+
+[node name="NPC" parent="Actors" instance=ExtResource("3_4wyf3")]
+position = Vector2(700, 100)
