@@ -1,7 +1,6 @@
 extends CanvasLayer
 ## A basic dialogue balloon for use with Dialogue Manager.
 
-
 ## The dialogue resource
 @export var dialogue_resource: DialogueResource
 
@@ -16,6 +15,9 @@ extends CanvasLayer
 
 ## The action to use to skip typing the dialogue
 @export var skip_action: StringName = &"ui_cancel"
+
+## Portrait TextureRect (assign your TextureRect here in the inspector)
+@export var portrait_texture_rect: TextureRect
 
 ## A sound player for voice lines (if they exist).
 @onready var audio_stream_player: AudioStreamPlayer = %AudioStreamPlayer
@@ -66,6 +68,15 @@ var mutation_cooldown: Timer = Timer.new()
 
 ## Indicator to show that player can progress dialogue.
 @onready var progress: Polygon2D = %Progress
+
+
+# --- NEW: public API to set portrait from NPC/actionable ---
+func set_portrait(tex: Texture2D) -> void:
+	if portrait_texture_rect == null:
+		return
+	portrait_texture_rect.texture = tex
+	portrait_texture_rect.visible = tex != null
+# ---------------------------------------------------------
 
 
 func _ready() -> void:
@@ -139,6 +150,10 @@ func apply_dialogue_line() -> void:
 	balloon.show()
 	will_hide_balloon = false
 
+	# (Optional safety) keep portrait visibility consistent if texture not set
+	if portrait_texture_rect != null:
+		portrait_texture_rect.visible = portrait_texture_rect.texture != null
+
 	dialogue_label.show()
 	if not dialogue_line.text.is_empty():
 		dialogue_label.type_out()
@@ -169,7 +184,6 @@ func next(next_id: String) -> void:
 
 
 #region Signals
-
 
 func _on_mutation_cooldown_timeout() -> void:
 	if will_hide_balloon:
@@ -208,6 +222,5 @@ func _on_balloon_gui_input(event: InputEvent) -> void:
 
 func _on_responses_menu_response_selected(response: DialogueResponse) -> void:
 	next(response.next_id)
-
 
 #endregion

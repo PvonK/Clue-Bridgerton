@@ -100,9 +100,10 @@ _data = {
 &"progress": SubResource("Animation_qkmqt")
 }
 
-[node name="ExampleBalloon" type="CanvasLayer"]
+[node name="ExampleBalloon" type="CanvasLayer" node_paths=PackedStringArray("portrait_texture_rect")]
 layer = 100
 script = ExtResource("1_36de5")
+portrait_texture_rect = NodePath("HBoxContainer/TextureRect")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 anchors_preset = 15
