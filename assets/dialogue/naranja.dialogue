@@ -1,9 +1,10 @@
 ~ Start
-Naranja Fuego: ¿Preocuparse por el mañana? El oro va y viene… como el amor, como el deseo.
-Naranja Fuego: El Búho no sale de la taberna… yo al menos invierto mi tiempo en placeres más refinados.
+
+Fuego Naranja: ¿Preocuparse por el mañana? Jamás… El oro va y viene… como el amor, como el deseo.
+Fuego Naranja: El Búho no sale de la taberna… yo al menos invierto mi tiempo en placeres más refinados.
 - Continuar => Start
 - Descartar => END
 - Elegir
-	Naranja Fuego: ¡Otra más para mi lista! Tranquila, igual vas a ser especial. Hasta que pueda pagar algo mejor.
+	Fuego Naranja: ¡Otra más para mi lista! Tranquila, igual vas a ser especial. Hasta que pueda pagar algo mejor.
 	Elegisteis un marido promiscuo, enfermo y en bancarrota. Algunas sois las olvidadas de Dios
 => END

@@ -1,9 +1,10 @@
 ~ Start
-buho: “La noche… cof cof … se alarga más de lo que debería.”
-buho: *mira a pajaro**cof* “¿Conversar con él? Prefiero hablarle a una silla… Si su familia es tan noble ¿Por qué ha repetido traje 3 veces?”
+
+Buho: *Tose antes de hablar* “La noche… cof cof … se alarga más de lo que debería.”
+Buho: *mira a pajaro**cof* “¿Conversar con él? No hablo con los pobres… Si su familia es tan noble ¿Por qué ha repetido traje 3 veces?”
 - Continuar => Start
 - Descartar => END
 - Elegir
-	buho: “Debo ir a la taberna para festejar.. La última vez me contagié de algo.. ¡Pero es tan divertida!”
+	Buho: “Debo ir a la taberna para festejar.. La última vez me contagié de algo.. ¡Pero es tan divertida!”
 	Consejito\: dormid con barbijo. No solo por el aliento a alcohol… sino por la tuberculosis que ahora llamáis marido.
 => END

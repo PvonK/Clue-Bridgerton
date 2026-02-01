@@ -85,7 +85,6 @@ layer = 100
 script = ExtResource("13_o8fc1")
 
 [node name="BG" type="ColorRect" parent="SplashScreen"]
-visible = false
 offset_left = -10.0
 offset_top = -748.0
 offset_right = 1926.0

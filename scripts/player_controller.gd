@@ -29,7 +29,9 @@ func _process(delta: float) -> void:
 func _unhandled_input(event: InputEvent) -> void:
 	if Input.is_action_just_pressed("ui_accept"):
 		var actionables = actionable_finder.get_overlapping_areas()
+		print(actionables)
 		if actionables.size() > 0 and can_talk(actionables[0]):
+			print(convos_had)
 			convos_had.append(actionables[0])
 			actionables[0].action()
 			return
@@ -38,4 +40,5 @@ func _physics_process(delta: float) -> void:
 	pass
 
 func can_talk(actionable):
+	print(convos_had)
 	return len(convos_had) < 6 or actionable in convos_had
