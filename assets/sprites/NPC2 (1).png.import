@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwmfebrsk1cql"
-path="res://.godot/imported/NPC2.png-1a0391c72ec49e29f988edeecf1919f2.ctex"
+uid="uid://xgl6yxamjdw6"
+path="res://.godot/imported/NPC2 (1).png-ee488a814bbf6600bff9c371b5f47575.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/NPC2.png"
-dest_files=["res://.godot/imported/NPC2.png-1a0391c72ec49e29f988edeecf1919f2.ctex"]
+source_file="res://assets/sprites/NPC2 (1).png"
+dest_files=["res://.godot/imported/NPC2 (1).png-ee488a814bbf6600bff9c371b5f47575.ctex"]
 
 [params]
 

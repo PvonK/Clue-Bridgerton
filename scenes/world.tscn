@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://b3xqishcrfpjd"]
+[gd_scene load_steps=23 format=3 uid="uid://b3xqishcrfpjd"]
 
 [ext_resource type="PackedScene" uid="uid://b1xwyabboxfe" path="res://scenes/Player.tscn" id="1_nnsk1"]
 [ext_resource type="Texture2D" uid="uid://pm5vqovjy58g" path="res://assets/dev/S.S._Anne_Ballroom-3556446786.png" id="2_rwgxs"]
@@ -16,9 +16,9 @@
 [ext_resource type="Script" uid="uid://ddsgwde2h8dn" path="res://scenes/fadeOut.gd" id="13_o8fc1"]
 [ext_resource type="PackedScene" uid="uid://c5niuualgo2jw" path="res://scenes/habitacion.tscn" id="14_pm21f"]
 [ext_resource type="AudioStream" uid="uid://csy7vk8hhoynt" path="res://audio/Versión inspirada en The Scientist (Coldplay) 8bit + Strigns.ogg" id="15_7t5mc"]
-[ext_resource type="SpriteFrames" uid="uid://c0aa1g02064c3" path="res://assets/animations/yellow_firework.tres" id="16_7t5mc"]
-[ext_resource type="Script" path="res://scenes/end_screen.gd" id="16_lakw3"]
-[ext_resource type="SpriteFrames" uid="uid://bih6w2rufk1d8" path="res://assets/animations/red_firework.tres" id="17_lakw3"]
+[ext_resource type="SpriteFrames" uid="uid://847mwhncixaa" path="res://assets/animations/yellow_firework.tres" id="16_7t5mc"]
+[ext_resource type="Script" uid="uid://bs0ds15xor84l" path="res://scenes/end_screen.gd" id="16_lakw3"]
+[ext_resource type="SpriteFrames" uid="uid://cctbt4m2vac2i" path="res://assets/animations/red_firework.tres" id="17_lakw3"]
 [ext_resource type="SpriteFrames" uid="uid://ci3b4i1nsooen" path="res://assets/animations/pink_firework.tres" id="17_pm21f"]
 
 [sub_resource type="SystemFont" id="SystemFont_pm21f"]
@@ -94,7 +94,6 @@ autoplay = true
 
 [node name="SplashScreen" type="CanvasLayer" parent="."]
 layer = 100
-visible = false
 script = ExtResource("13_o8fc1")
 
 [node name="BG" type="ColorRect" parent="SplashScreen"]
