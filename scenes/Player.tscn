@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://b1xwyabboxfe"]
+[gd_scene load_steps=7 format=3 uid="uid://b1xwyabboxfe"]
 
 [ext_resource type="Script" uid="uid://ch805owshix2v" path="res://scripts/player_controller.gd" id="1_p0vlq"]
 [ext_resource type="SpriteFrames" uid="uid://co3to176usjyl" path="res://assets/animations/principal.tres" id="2_3li8b"]
 [ext_resource type="Script" uid="uid://v0cu3ealxso0" path="res://scenes/actionable_finder.gd" id="3_3li8b"]
+[ext_resource type="AudioStream" uid="uid://bh4yxygkr3dkh" path="res://audio/pasos_Dofus_Ark.mp3" id="4_mdl7e"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rwgxs"]
 
@@ -29,3 +30,11 @@ script = ExtResource("3_3li8b")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="actionable_finder"]
 shape = SubResource("CircleShape2D_v6fml")
+
+[node name="Footsteps" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("4_mdl7e")
+volume_db = 1.0
+
+[node name="FootstepTimer" type="Timer" parent="."]
+wait_time = 0.001
