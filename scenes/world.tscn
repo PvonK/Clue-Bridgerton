@@ -43,38 +43,38 @@ position = Vector2(0, -50)
 position = Vector2(10, 50)
 
 [node name="PLayer" parent="Actors" instance=ExtResource("1_nnsk1")]
-position = Vector2(750, 600)
+position = Vector2(972, 903)
 
 [node name="Calavera Pico" parent="Actors" instance=ExtResource("3_4wyf3")]
-position = Vector2(1127, 714)
+position = Vector2(1334, 607)
 definition = ExtResource("4_k0juu")
 
 [node name="Buho" parent="Actors" instance=ExtResource("3_4wyf3")]
-position = Vector2(1122, 368)
+position = Vector2(1246, 368)
 definition = ExtResource("5_71j4m")
 
 [node name="Gato" parent="Actors" instance=ExtResource("3_4wyf3")]
-position = Vector2(825, 318)
+position = Vector2(490, 428)
 definition = ExtResource("6_qfnet")
 
 [node name="Sol" parent="Actors" instance=ExtResource("3_4wyf3")]
-position = Vector2(809, 772)
+position = Vector2(950, 315)
 definition = ExtResource("7_i7141")
 
 [node name="Pajaro" parent="Actors" instance=ExtResource("3_4wyf3")]
-position = Vector2(1174, 548)
+position = Vector2(1540, 510)
 definition = ExtResource("9_7r4gi")
 
 [node name="Fuego" parent="Actors" instance=ExtResource("3_4wyf3")]
-position = Vector2(976, 779)
+position = Vector2(567, 619)
 definition = ExtResource("10_e3hyu")
 
 [node name="Laurel" parent="Actors" instance=ExtResource("3_4wyf3")]
-position = Vector2(742, 456)
+position = Vector2(329, 650)
 definition = ExtResource("11_q5onr")
 
 [node name="Bufon" parent="Actors" instance=ExtResource("3_4wyf3")]
-position = Vector2(987, 322)
+position = Vector2(1170, 773)
 definition = ExtResource("12_q5onr")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
@@ -83,6 +83,7 @@ autoplay = true
 
 [node name="SplashScreen" type="CanvasLayer" parent="."]
 layer = 100
+visible = false
 script = ExtResource("13_o8fc1")
 
 [node name="BG" type="ColorRect" parent="SplashScreen"]
@@ -102,6 +103,7 @@ texture = ExtResource("13_jhx03")
 
 [node name="endscreen" type="CanvasLayer" parent="."]
 layer = 100
+visible = false
 script = ExtResource("16_lakw3")
 
 [node name="BG" type="ColorRect" parent="endscreen"]
