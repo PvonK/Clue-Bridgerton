@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=3 uid="uid://d0cxd1e351suk"]
 
 [ext_resource type="Script" uid="uid://c011oj51ergm6" path="res://scenes/dialogueTutorial/balloon.gd" id="1_m5m0l"]
-[ext_resource type="Texture2D" uid="uid://m4rr0qpesddw" path="res://assets/sprites/closeUps/PrincipalCloseup.png" id="2_m5m0l"]
+[ext_resource type="Texture2D" uid="uid://yut6wgrw2uul" path="res://assets/sprites/closeUps/PrincipalCloseupHD.png" id="2_m5m0l"]
 [ext_resource type="Texture2D" uid="uid://d3t2l1sowxv18" path="res://assets/sprites/MarcoDialogo.png" id="3_8ghv3"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="4_q1j4k"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="5_siyp6"]
