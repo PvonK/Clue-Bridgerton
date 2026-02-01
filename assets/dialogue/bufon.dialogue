@@ -1,7 +1,7 @@
 ~ Start
 Bufon: *dice en susurros* ¡Ay, mi herida! La vida es corta… más de lo que imaginas.
 Bufon: Ese laurel marchito… ni siquiera sabe vestirse para un baile real.
-- Continuar => Start
+- Continuar => END
 - Descartar => END
 - Elegir
 	Bufon: ¡Seremos felices! En las 36 horas que me restan de vida. Dios perdona pero mi herida no

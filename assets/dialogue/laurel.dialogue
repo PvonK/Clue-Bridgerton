@@ -1,7 +1,7 @@
 ~ Start
 Laurel: ¡Achís! Perdón… el aire frío del jardín no me hizo bien. Nada que una infusión no cure.
 Laurel: El Sol brilla porque otros lo visten. No confiaría mi honor a alguien tan… distraído.
-- Continuar => Start
+- Continuar => END
 - Descartar => END
 - Elegir
 	Laurel: Juntos seremos muy felices, mi diamante de la temporada
