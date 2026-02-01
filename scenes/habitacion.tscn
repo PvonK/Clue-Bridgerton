@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5niuualgo2jw"]
+
+[ext_resource type="Texture2D" uid="uid://cqe4yfk32jnfx" path="res://assets/sprites/BufonSpritesheet.png" id="1_78xi2"]
+
+[node name="Habitacion" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1076.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 1038.0
+offset_top = 161.0
+offset_right = 1336.0
+offset_bottom = 546.0
+texture = ExtResource("1_78xi2")
