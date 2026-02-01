@@ -16,7 +16,7 @@
 [ext_resource type="Script" uid="uid://ddsgwde2h8dn" path="res://scenes/fadeOut.gd" id="13_o8fc1"]
 [ext_resource type="AudioStream" uid="uid://csy7vk8hhoynt" path="res://audio/Versión inspirada en The Scientist (Coldplay) 8bit + Strigns.ogg" id="15_7t5mc"]
 [ext_resource type="SpriteFrames" uid="uid://c0aa1g02064c3" path="res://assets/animations/yellow_firework.tres" id="16_7t5mc"]
-[ext_resource type="Script" uid="uid://bs0ds15xor84l" path="res://scenes/end_screen.gd" id="16_lakw3"]
+[ext_resource type="Script" path="res://scenes/end_screen.gd" id="16_lakw3"]
 [ext_resource type="SpriteFrames" uid="uid://bih6w2rufk1d8" path="res://assets/animations/red_firework.tres" id="17_lakw3"]
 
 [node name="world" type="Node2D"]

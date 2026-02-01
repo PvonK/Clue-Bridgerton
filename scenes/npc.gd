@@ -62,8 +62,9 @@ func openDialogue() -> void:
 		current_dialogue.call("set_portrait", definition.portrait)
 
 func exitDialogue() -> void:
-	_play_ui_sfx(sfx_close_player)
+	
 
 	if current_dialogue:
+		_play_ui_sfx(sfx_close_player)
 		current_dialogue.queue_free()
 		current_dialogue = null
