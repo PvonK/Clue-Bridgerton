@@ -3,10 +3,11 @@
 [ext_resource type="Resource" uid="uid://duu665h1ykih1" path="res://assets/dialogue/laurel.dialogue" id="1_jstwp"]
 [ext_resource type="SpriteFrames" uid="uid://cd70l0h3lf2qv" path="res://assets/animations/laurel.tres" id="2_jstwp"]
 [ext_resource type="Texture2D" uid="uid://b1uhcux3g0mr8" path="res://assets/sprites/closeUps/LaurelCloseup.png" id="3_jstwp"]
-[ext_resource type="Script" path="res://scripts/character_def.gd" id="4_ijayk"]
+[ext_resource type="Script" uid="uid://bh1caj7euko2j" path="res://scripts/character_def.gd" id="4_ijayk"]
 
 [resource]
 script = ExtResource("4_ijayk")
 frames = ExtResource("2_jstwp")
 portrait = ExtResource("3_jstwp")
 dialogue_resource = ExtResource("1_jstwp")
+metadata/_custom_type_script = "uid://bh1caj7euko2j"

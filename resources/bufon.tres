@@ -3,10 +3,11 @@
 [ext_resource type="Resource" uid="uid://cpyd1usqf6wd6" path="res://assets/dialogue/bufon.dialogue" id="1_yyrgj"]
 [ext_resource type="SpriteFrames" uid="uid://bwfn8xqcj6bnl" path="res://assets/animations/bufon.tres" id="2_yyrgj"]
 [ext_resource type="Texture2D" uid="uid://0sqkoty12mih" path="res://assets/sprites/closeUps/BufonCloseup.png" id="3_yyrgj"]
-[ext_resource type="Script" path="res://scripts/character_def.gd" id="4_lafi3"]
+[ext_resource type="Script" uid="uid://bh1caj7euko2j" path="res://scripts/character_def.gd" id="4_lafi3"]
 
 [resource]
 script = ExtResource("4_lafi3")
 frames = ExtResource("2_yyrgj")
 portrait = ExtResource("3_yyrgj")
 dialogue_resource = ExtResource("1_yyrgj")
+metadata/_custom_type_script = "uid://bh1caj7euko2j"

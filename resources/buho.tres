@@ -3,10 +3,11 @@
 [ext_resource type="Resource" uid="uid://kai115j8xwh6" path="res://assets/dialogue/buho.dialogue" id="1_isbpx"]
 [ext_resource type="SpriteFrames" uid="uid://bahhkv7nkse7f" path="res://assets/animations/buho.tres" id="2_isbpx"]
 [ext_resource type="Texture2D" uid="uid://bcry52t1uk1et" path="res://assets/sprites/closeUps/BuhoRosaCloseup.png" id="3_isbpx"]
-[ext_resource type="Script" path="res://scripts/character_def.gd" id="4_1p7c5"]
+[ext_resource type="Script" uid="uid://bh1caj7euko2j" path="res://scripts/character_def.gd" id="4_1p7c5"]
 
 [resource]
 script = ExtResource("4_1p7c5")
 frames = ExtResource("2_isbpx")
 portrait = ExtResource("3_isbpx")
 dialogue_resource = ExtResource("1_isbpx")
+metadata/_custom_type_script = "uid://bh1caj7euko2j"

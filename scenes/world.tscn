@@ -13,7 +13,7 @@
 [ext_resource type="Resource" uid="uid://din5fn76xwlo4" path="res://resources/laurel.tres" id="11_q5onr"]
 [ext_resource type="Resource" uid="uid://ci8b56n6buhgs" path="res://resources/bufon.tres" id="12_q5onr"]
 [ext_resource type="Texture2D" uid="uid://dcm0i6te38m62" path="res://assets/sprites/splashScreen.png" id="13_jhx03"]
-[ext_resource type="Script" uid="uid://ddsgwde2h8dn" path="res://scenes/fadeOut.gd" id="13_o8fc1"]
+[ext_resource type="Script" path="res://scenes/fadeOut.gd" id="13_o8fc1"]
 
 [node name="world" type="Node2D"]
 
@@ -76,6 +76,7 @@ layer = 100
 script = ExtResource("13_o8fc1")
 
 [node name="BG" type="ColorRect" parent="SplashScreen"]
+visible = false
 offset_left = -10.0
 offset_top = -748.0
 offset_right = 1926.0
