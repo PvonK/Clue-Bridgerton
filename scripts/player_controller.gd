@@ -18,7 +18,7 @@ func _process(delta: float) -> void:
 		visual.speed_scale = 2
 	else:
 		visual.speed_scale = 1
-	
+
 	move_and_collide(velocity)
 
 
@@ -41,9 +41,9 @@ func _unhandled_input(event: InputEvent) -> void:
 		movement_vector.y = walking_speed
 
 
-
 func _physics_process(delta: float) -> void:
 	pass
+
 
 func can_talk(actionable):
 	print(convos_had)
