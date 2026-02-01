@@ -1,14 +1,14 @@
 extends CanvasLayer
 
 
-@onready var sprite1: AnimatedSprite2D = $"../SplashScreen3/AnimatedSprite2D"
-@onready var sprite2: AnimatedSprite2D = $"../SplashScreen3/AnimatedSprite2D2"
-@onready var animated_sprite_2d_3: AnimatedSprite2D = $"../SplashScreen3/AnimatedSprite2D3"
-@onready var animated_sprite_2d_4: AnimatedSprite2D = $"../SplashScreen3/AnimatedSprite2D4"
-@onready var animated_sprite_2d_5: AnimatedSprite2D = $"../SplashScreen3/AnimatedSprite2D5"
-@onready var animated_sprite_2d_8: AnimatedSprite2D = $"../SplashScreen3/AnimatedSprite2D8"
-@onready var animated_sprite_2d_7: AnimatedSprite2D = $"../SplashScreen3/AnimatedSprite2D7"
-@onready var animated_sprite_2d_6: AnimatedSprite2D = $"../SplashScreen3/AnimatedSprite2D6"
+@onready var sprite1: AnimatedSprite2D = $"../endscreen/AnimatedSprite2D"
+@onready var sprite2: AnimatedSprite2D = $"../endscreen/AnimatedSprite2D2"
+@onready var animated_sprite_2d_3: AnimatedSprite2D = $"../endscreen/AnimatedSprite2D3"
+@onready var animated_sprite_2d_4: AnimatedSprite2D = $"../endscreen/AnimatedSprite2D4"
+@onready var animated_sprite_2d_5: AnimatedSprite2D = $"../endscreen/AnimatedSprite2D5"
+@onready var animated_sprite_2d_8: AnimatedSprite2D = $"../endscreen/AnimatedSprite2D8"
+@onready var animated_sprite_2d_7: AnimatedSprite2D = $"../endscreen/AnimatedSprite2D7"
+@onready var animated_sprite_2d_6: AnimatedSprite2D = $"../endscreen/AnimatedSprite2D6"
 
 
 func _ready():
@@ -23,7 +23,11 @@ func _ready():
 	randomize()
 	randomize_sprite(sprite1)
 	randomize_sprite(sprite2)
+	visible = false
 
+func _process(delta: float) -> void:
+	if State.game_ended:
+		visible = true
 
 func randomize_sprite(sprite: Node2D):
 	var viewport_size = Vector2(1920, 1080)

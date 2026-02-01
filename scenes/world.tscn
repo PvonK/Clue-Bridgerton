@@ -95,39 +95,18 @@ offset_right = 1937.0
 offset_bottom = 1830.0
 texture = ExtResource("13_jhx03")
 
-[node name="SplashScreen2" type="CanvasLayer" parent="."]
+[node name="endscreen" type="CanvasLayer" parent="."]
 layer = 100
-visible = false
-script = ExtResource("13_o8fc1")
-
-[node name="BG" type="ColorRect" parent="SplashScreen2"]
-offset_left = -10.0
-offset_top = -748.0
-offset_right = 1926.0
-offset_bottom = 1399.0
-color = Color(0, 0, 0, 1)
-
-[node name="SplashTexture" type="TextureRect" parent="SplashScreen2/BG"]
-layout_mode = 0
-offset_left = 8.0
-offset_top = 747.0
-offset_right = 1937.0
-offset_bottom = 1830.0
-texture = ExtResource("13_jhx03")
-
-[node name="SplashScreen3" type="CanvasLayer" parent="."]
-layer = 100
-visible = false
 script = ExtResource("16_lakw3")
 
-[node name="BG" type="ColorRect" parent="SplashScreen3"]
+[node name="BG" type="ColorRect" parent="endscreen"]
 offset_left = -10.0
 offset_top = -748.0
 offset_right = 1926.0
 offset_bottom = 1399.0
 color = Color(0, 0, 0, 1)
 
-[node name="SplashTexture" type="TextureRect" parent="SplashScreen3/BG"]
+[node name="SplashTexture" type="TextureRect" parent="endscreen/BG"]
 layout_mode = 0
 offset_left = 8.0
 offset_top = 747.0
@@ -135,46 +114,46 @@ offset_right = 1937.0
 offset_bottom = 1830.0
 texture = ExtResource("13_jhx03")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="SplashScreen3"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="endscreen"]
 position = Vector2(640.5, 656.5)
 scale = Vector2(2.140625, 1.890625)
 sprite_frames = ExtResource("16_7t5mc")
 autoplay = "default"
 
-[node name="AnimatedSprite2D6" type="AnimatedSprite2D" parent="SplashScreen3"]
+[node name="AnimatedSprite2D6" type="AnimatedSprite2D" parent="endscreen"]
 position = Vector2(640.5, 656.5)
 scale = Vector2(2.140625, 1.890625)
 sprite_frames = ExtResource("16_7t5mc")
 autoplay = "default"
 
-[node name="AnimatedSprite2D7" type="AnimatedSprite2D" parent="SplashScreen3"]
+[node name="AnimatedSprite2D7" type="AnimatedSprite2D" parent="endscreen"]
 position = Vector2(640.5, 656.5)
 scale = Vector2(2.140625, 1.890625)
 sprite_frames = ExtResource("16_7t5mc")
 autoplay = "default"
 
-[node name="AnimatedSprite2D8" type="AnimatedSprite2D" parent="SplashScreen3"]
+[node name="AnimatedSprite2D8" type="AnimatedSprite2D" parent="endscreen"]
 position = Vector2(640.5, 656.5)
 scale = Vector2(2.140625, 1.890625)
 sprite_frames = ExtResource("16_7t5mc")
 autoplay = "default"
 
-[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="SplashScreen3"]
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="endscreen"]
 position = Vector2(1341, 316)
 sprite_frames = ExtResource("17_lakw3")
 autoplay = "default"
 
-[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="SplashScreen3"]
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="endscreen"]
 position = Vector2(1341, 316)
 sprite_frames = ExtResource("17_lakw3")
 autoplay = "default"
 
-[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="SplashScreen3"]
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="endscreen"]
 position = Vector2(1341, 316)
 sprite_frames = ExtResource("17_lakw3")
 autoplay = "default"
 
-[node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="SplashScreen3"]
+[node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="endscreen"]
 position = Vector2(1341, 316)
 sprite_frames = ExtResource("17_lakw3")
 autoplay = "default"

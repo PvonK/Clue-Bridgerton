@@ -6,4 +6,5 @@ Laurel: El Sol brilla porque otros lo visten. No confiaría mi honor a alguien t
 - Elegir
 	Laurel: Juntos seremos muy felices, mi diamante de la temporada
 	Entre enfermedades, despilfarradores y promesas vacias… Elegisteis la única opción decente. ¡Felicitaciones! ¡Ganasteis!
+	set State.game_ended = true
 => END
