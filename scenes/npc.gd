@@ -26,7 +26,6 @@ func openDialogue():
 			)
 
 
-
 func exitDialogue() -> void:
 	if current_dialogue:
 		current_dialogue.queue_free()

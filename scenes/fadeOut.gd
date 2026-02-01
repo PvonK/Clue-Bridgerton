@@ -17,6 +17,11 @@ func _ready() -> void:
 	t.tween_property(bg, "modulate:a", 0.0, fade_time).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
 	await t.finished
 
+
+	var InitDialogue = load("res://assets/dialogue/start_dialogue.dialogue")
+	DialogueManager.show_dialogue_balloon_scene("res://scenes/dialogueTutorial/balloon_big.tscn", InitDialogue, "Start")
+
+
 	if remove_after:
 		queue_free()  # removes the overlay from scene
 	else:

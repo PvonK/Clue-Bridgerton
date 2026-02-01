@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://b3xqishcrfpjd"]
+[gd_scene load_steps=16 format=3 uid="uid://b3xqishcrfpjd"]
 
 [ext_resource type="PackedScene" uid="uid://b1xwyabboxfe" path="res://scenes/Player.tscn" id="1_nnsk1"]
 [ext_resource type="Texture2D" uid="uid://pm5vqovjy58g" path="res://assets/dev/S.S._Anne_Ballroom-3556446786.png" id="2_rwgxs"]
@@ -14,8 +14,6 @@
 [ext_resource type="Resource" uid="uid://ci8b56n6buhgs" path="res://resources/bufon.tres" id="12_q5onr"]
 [ext_resource type="Texture2D" uid="uid://dcm0i6te38m62" path="res://assets/sprites/splashScreen.png" id="13_jhx03"]
 [ext_resource type="Script" path="res://scenes/fadeOut.gd" id="13_o8fc1"]
-[ext_resource type="PackedScene" path="res://scenes/dialogueTutorial/balloon_big.tscn" id="13_xo05s"]
-[ext_resource type="Resource" uid="uid://chpm3vpi1i3vd" path="res://assets/dialogue/start_dialogue.dialogue" id="14_7t5mc"]
 [ext_resource type="AudioStream" uid="uid://csy7vk8hhoynt" path="res://audio/Versión inspirada en The Scientist (Coldplay) 8bit + Strigns.ogg" id="15_7t5mc"]
 
 [node name="world" type="Node2D"]
@@ -70,11 +68,6 @@ definition = ExtResource("11_q5onr")
 [node name="Bufon" parent="Actors" instance=ExtResource("3_4wyf3")]
 position = Vector2(987, 322)
 definition = ExtResource("12_q5onr")
-
-[node name="IntroDialogue" parent="." instance=ExtResource("13_xo05s")]
-dialogue_resource = ExtResource("14_7t5mc")
-start_from_title = "Start"
-auto_start = true
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("15_7t5mc")
