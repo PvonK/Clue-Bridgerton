@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d1k0jlbib6ki0"
+path="res://.godot/imported/Versión inspirada en The Scientist (Coldplay) Strings.ogg-ac035be070c8cc11d46896c138bb809a.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/Versión inspirada en The Scientist (Coldplay) Strings.ogg"
+dest_files=["res://.godot/imported/Versión inspirada en The Scientist (Coldplay) Strings.ogg-ac035be070c8cc11d46896c138bb809a.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,10 +1,10 @@
-[gd_scene load_steps=14 format=3 uid="uid://vw45dtpj6l1u"]
+[gd_scene load_steps=14 format=3 uid="uid://d0cxd1e351suk"]
 
-[ext_resource type="Script" uid="uid://c011oj51ergm6" path="res://scenes/dialogueTutorial/balloon.gd" id="1_spnud"]
-[ext_resource type="Texture2D" uid="uid://bow87da32vswu" path="res://assets/dev/mewtwo2.png" id="2_ten1p"]
-[ext_resource type="Texture2D" uid="uid://d3t2l1sowxv18" path="res://assets/sprites/MarcoDialogo.png" id="3_i82go"]
-[ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="4_r8odq"]
-[ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="5_0up1u"]
+[ext_resource type="Script" uid="uid://c011oj51ergm6" path="res://scenes/dialogueTutorial/balloon.gd" id="1_m5m0l"]
+[ext_resource type="Texture2D" uid="uid://m4rr0qpesddw" path="res://assets/sprites/closeUps/PrincipalCloseup.png" id="2_m5m0l"]
+[ext_resource type="Texture2D" uid="uid://d3t2l1sowxv18" path="res://assets/sprites/MarcoDialogo.png" id="3_8ghv3"]
+[ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="4_q1j4k"]
+[ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="5_siyp6"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
 bg_color = Color(0, 0, 0, 1)
@@ -103,23 +103,31 @@ _data = {
 
 [node name="ExampleBalloon" type="CanvasLayer" node_paths=PackedStringArray("portrait_texture_rect")]
 layer = 100
-script = ExtResource("1_spnud")
+script = ExtResource("1_m5m0l")
 portrait_texture_rect = NodePath("HBoxContainer/TextureRect")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.30588236)
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 15.0
+offset_left = 63.338
 offset_top = 148.495
-offset_right = -1107.0002
-offset_bottom = -134.505
+offset_right = -1072.6613
+offset_bottom = -152.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="TextureRect" type="TextureRect" parent="HBoxContainer"]
 layout_mode = 2
-texture = ExtResource("2_ten1p")
+texture = ExtResource("2_m5m0l")
 expand_mode = 2
 stretch_mode = 4
 
@@ -129,31 +137,34 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 725.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_qq3yp")
 
 [node name="MarginContainer" type="MarginContainer" parent="Balloon"]
 layout_mode = 1
-anchors_preset = 12
-anchor_top = 1.0
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -219.0
+offset_top = 200.0
+offset_right = 725.0
+offset_bottom = 200.0
 grow_horizontal = 2
-grow_vertical = 0
+grow_vertical = 2
+scale = Vector2(0.6, 0.6)
 
 [node name="PanelContainer" type="TextureRect" parent="Balloon/MarginContainer"]
 clip_children = 2
 layout_mode = 2
-texture = ExtResource("3_i82go")
+texture = ExtResource("3_8ghv3")
 
 [node name="MarginContainer" type="MarginContainer" parent="Balloon/MarginContainer/PanelContainer"]
 layout_mode = 0
-offset_left = 3.0
-offset_top = 3.0
-offset_right = 1857.0
-offset_bottom = 186.0
+offset_left = 25.0
+offset_top = 89.99997
+offset_right = 1851.6667
+offset_bottom = 968.33325
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Balloon/MarginContainer/PanelContainer/MarginContainer"]
 layout_mode = 2
@@ -173,7 +184,7 @@ text = "Character"
 fit_content = true
 scroll_active = false
 
-[node name="DialogueLabel" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer/VBoxContainer" instance=ExtResource("4_r8odq")]
+[node name="DialogueLabel" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer/VBoxContainer" instance=ExtResource("4_q1j4k")]
 unique_name_in_owner = true
 self_modulate = Color(0.60784316, 0, 0, 1)
 layout_mode = 2
@@ -213,7 +224,7 @@ grow_vertical = 2
 size_flags_vertical = 8
 theme_override_constants/separation = 2
 alignment = 1
-script = ExtResource("5_0up1u")
+script = ExtResource("5_siyp6")
 response_template = NodePath("ResponseExample")
 
 [node name="ResponseExample" type="Button" parent="Balloon/ResponsesMenu"]
