@@ -40,35 +40,35 @@ anchor_mode = 0
 [node name="PLayer" parent="Actors" instance=ExtResource("1_nnsk1")]
 position = Vector2(750, 600)
 
-[node name="NPC" parent="Actors" instance=ExtResource("3_4wyf3")]
+[node name="Calavera Pico" parent="Actors" instance=ExtResource("3_4wyf3")]
 position = Vector2(1127, 714)
 definition = ExtResource("4_k0juu")
 
-[node name="NPC2" parent="Actors" instance=ExtResource("3_4wyf3")]
+[node name="Buho" parent="Actors" instance=ExtResource("3_4wyf3")]
 position = Vector2(1122, 368)
 definition = ExtResource("5_71j4m")
 
-[node name="NPC3" parent="Actors" instance=ExtResource("3_4wyf3")]
+[node name="Gato" parent="Actors" instance=ExtResource("3_4wyf3")]
 position = Vector2(825, 318)
 definition = ExtResource("6_qfnet")
 
-[node name="NPC4" parent="Actors" instance=ExtResource("3_4wyf3")]
+[node name="Sol" parent="Actors" instance=ExtResource("3_4wyf3")]
 position = Vector2(809, 772)
 definition = ExtResource("7_i7141")
 
-[node name="NPC5" parent="Actors" instance=ExtResource("3_4wyf3")]
+[node name="Pajaro" parent="Actors" instance=ExtResource("3_4wyf3")]
 position = Vector2(1174, 548)
 definition = ExtResource("9_7r4gi")
 
-[node name="NPC6" parent="Actors" instance=ExtResource("3_4wyf3")]
+[node name="Fuego" parent="Actors" instance=ExtResource("3_4wyf3")]
 position = Vector2(976, 779)
 definition = ExtResource("10_e3hyu")
 
-[node name="NPC7" parent="Actors" instance=ExtResource("3_4wyf3")]
+[node name="Laurel" parent="Actors" instance=ExtResource("3_4wyf3")]
 position = Vector2(742, 456)
 definition = ExtResource("11_q5onr")
 
-[node name="NPC8" parent="Actors" instance=ExtResource("3_4wyf3")]
+[node name="Bufon" parent="Actors" instance=ExtResource("3_4wyf3")]
 position = Vector2(987, 322)
 definition = ExtResource("12_q5onr")
 

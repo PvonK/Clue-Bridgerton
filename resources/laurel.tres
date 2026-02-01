@@ -10,4 +10,5 @@ script = ExtResource("4_ijayk")
 frames = ExtResource("2_jstwp")
 portrait = ExtResource("3_jstwp")
 dialogue_resource = ExtResource("1_jstwp")
+is_win_condition = true
 metadata/_custom_type_script = "uid://bh1caj7euko2j"
