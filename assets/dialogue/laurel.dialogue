@@ -1,0 +1,9 @@
+~ Start
+Laurel: ¡Achís! Perdón… el aire frío del jardín no me hizo bien. Nada que una infusión no cure.
+Laurel: El Sol brilla porque otros lo visten. No confiaría mi honor a alguien tan… distraído.
+- Continuar => Start
+- Descartar => END
+- Elegir
+	Laurel: Juntos seremos muy felices, mi diamante de la temporada
+	Entre enfermedades, despilfarradores y promesas vacias… Elegisteis la única opción decente. ¡Felicitaciones! ¡Ganasteis!
+=> END

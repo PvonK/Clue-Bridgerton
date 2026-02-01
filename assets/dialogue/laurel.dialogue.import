@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://duu665h1ykih1"
+path="res://.godot/imported/laurel.dialogue-2391f5f9728e55331ad80f4e7880dc30.tres"
+
+[deps]
+
+source_file="res://assets/dialogue/laurel.dialogue"
+dest_files=["res://.godot/imported/laurel.dialogue-2391f5f9728e55331ad80f4e7880dc30.tres"]
+
+[params]
+
+defaults=true

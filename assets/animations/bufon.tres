@@ -1,0 +1,25 @@
+[gd_resource type="SpriteFrames" load_steps=4 format=3 uid="uid://bwfn8xqcj6bnl"]
+
+[ext_resource type="Texture2D" uid="uid://cqe4yfk32jnfx" path="res://assets/sprites/BufonSpritesheet.png" id="1_l051o"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_18xq3"]
+atlas = ExtResource("1_l051o")
+region = Rect2(0, 0, 14, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b44il"]
+atlas = ExtResource("1_l051o")
+region = Rect2(14, 0, 14, 20)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_18xq3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b44il")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.4
+}]

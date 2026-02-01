@@ -35,7 +35,7 @@ enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://assets/dialogue/test.dialogue", "res://assets/dialogue/calavera_pico.dialogue", "res://assets/dialogue/gato.dialogue", "res://assets/dialogue/naranja.dialogue", "res://assets/dialogue/buho.dialogue", "res://assets/dialogue/pajaro.dialogue", "res://assets/dialogue/sol.dialogue", "res://assets/dialogue/bufon.dialogue")
+locale/translations_pot_files=PackedStringArray("res://assets/dialogue/test.dialogue", "res://assets/dialogue/calavera_pico.dialogue", "res://assets/dialogue/gato.dialogue", "res://assets/dialogue/naranja.dialogue", "res://assets/dialogue/buho.dialogue", "res://assets/dialogue/pajaro.dialogue", "res://assets/dialogue/sol.dialogue", "res://assets/dialogue/bufon.dialogue", "res://assets/dialogue/laurel.dialogue")
 
 [layer_names]
 

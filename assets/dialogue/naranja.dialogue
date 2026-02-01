@@ -1,9 +1,9 @@
 ~ Start
-buho: “La noche… cof cof … se alarga más de lo que debería.”
-buho: *mira a pajaro**cof* “¿Conversar con él? Prefiero hablarle a una silla… Si su familia es tan noble ¿Por qué ha repetido traje 3 veces?”
+Naranja Fuego: ¿Preocuparse por el mañana? El oro va y viene… como el amor, como el deseo.
+Naranja Fuego: El Búho no sale de la taberna… yo al menos invierto mi tiempo en placeres más refinados.
 - Continuar => Start
 - Descartar => END
 - Elegir
-	buho: “Debo ir a la taberna para festejar.. La última vez me contagié de algo.. ¡Pero es tan divertida!”
-	Consejito\: dormid con barbijo. No solo por el aliento a alcohol… sino por la tuberculosis que ahora llamáis marido.
+	Naranja Fuego: ¡Otra más para mi lista! Tranquila, igual vas a ser especial. Hasta que pueda pagar algo mejor.
+	Elegisteis un marido promiscuo, enfermo y en bancarrota. Algunas sois las olvidadas de Dios
 => END
