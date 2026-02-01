@@ -1,0 +1,25 @@
+[gd_resource type="SpriteFrames" load_steps=4 format=3 uid="uid://cd70l0h3lf2qv"]
+
+[ext_resource type="Texture2D" uid="uid://bv2475dk1uxtw" path="res://assets/sprites/LaurelSpriteSheet.png" id="1_esc0f"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p11dw"]
+atlas = ExtResource("1_esc0f")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d67yt"]
+atlas = ExtResource("1_esc0f")
+region = Rect2(0, 24, 24, 24)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p11dw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d67yt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.3
+}]

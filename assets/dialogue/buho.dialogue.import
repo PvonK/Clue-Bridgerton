@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://kai115j8xwh6"
+path="res://.godot/imported/buho.dialogue-a4c59a7b8810d2f86344612d3ac5d30c.tres"
+
+[deps]
+
+source_file="res://assets/dialogue/buho.dialogue"
+dest_files=["res://.godot/imported/buho.dialogue-a4c59a7b8810d2f86344612d3ac5d30c.tres"]
+
+[params]
+
+defaults=true

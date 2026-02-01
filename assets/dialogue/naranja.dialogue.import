@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://c02n0ea7ll342"
+path="res://.godot/imported/naranja.dialogue-0ec98ca57be23b03535ee536687a61fa.tres"
+
+[deps]
+
+source_file="res://assets/dialogue/naranja.dialogue"
+dest_files=["res://.godot/imported/naranja.dialogue-0ec98ca57be23b03535ee536687a61fa.tres"]
+
+[params]
+
+defaults=true

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://byaw1mvbt2go2"
-path="res://.godot/imported/muebles.png-b665edf52f30e4fecc4be41355efcc03.ctex"
+uid="uid://ex6s07g7td1t"
+path="res://.godot/imported/suelo_pista_baile.png-d93a52bfed5b0c8c5372c877364b7404.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tiles/muebles.png"
-dest_files=["res://.godot/imported/muebles.png-b665edf52f30e4fecc4be41355efcc03.ctex"]
+source_file="res://assets/tiles/suelo_pista_baile.png"
+dest_files=["res://.godot/imported/suelo_pista_baile.png-d93a52bfed5b0c8c5372c877364b7404.ctex"]
 
 [params]
 

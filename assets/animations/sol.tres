@@ -1,0 +1,25 @@
+[gd_resource type="SpriteFrames" load_steps=4 format=3 uid="uid://stu526m5ckyi"]
+
+[ext_resource type="Texture2D" uid="uid://brsj65j1ee34q" path="res://assets/sprites/SolSpritesheet.png" id="1_mx4wo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ffwuj"]
+atlas = ExtResource("1_mx4wo")
+region = Rect2(0, 0, 14, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lwdjc"]
+atlas = ExtResource("1_mx4wo")
+region = Rect2(14, 0, 14, 20)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ffwuj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lwdjc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.3
+}]

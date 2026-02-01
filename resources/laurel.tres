@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CharacterDef" load_steps=5 format=3 uid="uid://din5fn76xwlo4"]
+
+[ext_resource type="Resource" uid="uid://cg23y481hta2i" path="res://assets/dialogue/test.dialogue" id="1_jstwp"]
+[ext_resource type="SpriteFrames" uid="uid://cd70l0h3lf2qv" path="res://assets/animations/laurel.tres" id="2_jstwp"]
+[ext_resource type="Texture2D" uid="uid://bow87da32vswu" path="res://assets/dev/mewtwo2.png" id="3_588j5"]
+[ext_resource type="Script" uid="uid://bh1caj7euko2j" path="res://scripts/character_def.gd" id="4_ijayk"]
+
+[resource]
+script = ExtResource("4_ijayk")
+frames = ExtResource("2_jstwp")
+portrait = ExtResource("3_588j5")
+dialogue_resource = ExtResource("1_jstwp")
+metadata/_custom_type_script = "uid://bh1caj7euko2j"

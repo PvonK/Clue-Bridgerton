@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://b7egtgtjwwk4x"
+path="res://.godot/imported/calavera_pico.dialogue-2765b106a07fd49b185f312ab8b1b779.tres"
+
+[deps]
+
+source_file="res://assets/dialogue/calavera_pico.dialogue"
+dest_files=["res://.godot/imported/calavera_pico.dialogue-2765b106a07fd49b185f312ab8b1b779.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cyv135w8bvvy"
+path="res://.godot/imported/pajaro.dialogue-2bbcce3ea7699b3c065981e07e2071c1.tres"
+
+[deps]
+
+source_file="res://assets/dialogue/pajaro.dialogue"
+dest_files=["res://.godot/imported/pajaro.dialogue-2bbcce3ea7699b3c065981e07e2071c1.tres"]
+
+[params]
+
+defaults=true

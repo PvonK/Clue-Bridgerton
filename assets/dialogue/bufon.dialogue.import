@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cpyd1usqf6wd6"
+path="res://.godot/imported/bufon.dialogue-3ba47043fb087c1b16d334e5bdfb9f3d.tres"
+
+[deps]
+
+source_file="res://assets/dialogue/bufon.dialogue"
+dest_files=["res://.godot/imported/bufon.dialogue-3ba47043fb087c1b16d334e5bdfb9f3d.tres"]
+
+[params]
+
+defaults=true

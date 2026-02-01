@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @export var walking_speed: float = 2
 @onready var actionable_finder: Area2D = $actionable_finder
+@onready var visual: AnimatedSprite2D = $visual
 
 func _process(delta: float) -> void:
 	velocity.x = 0
@@ -15,6 +16,11 @@ func _process(delta: float) -> void:
 		velocity.y = -walking_speed
 	if Input.is_action_pressed("ui_down"):
 		velocity.y = walking_speed
+
+	if velocity.length() > 0:
+		visual.speed_scale = 2
+	else:
+		visual.speed_scale = 1
 
 	move_and_collide(velocity)
 

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://3qd1ejnm5q65"
+path="res://.godot/imported/sol.dialogue-3d499d2432b14230dcc5e41ee685e538.tres"
+
+[deps]
+
+source_file="res://assets/dialogue/sol.dialogue"
+dest_files=["res://.godot/imported/sol.dialogue-3d499d2432b14230dcc5e41ee685e538.tres"]
+
+[params]
+
+defaults=true

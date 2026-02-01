@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CharacterDef" load_steps=5 format=3 uid="uid://bpjp742muuwn"]
+
+[ext_resource type="Resource" uid="uid://cg23y481hta2i" path="res://assets/dialogue/test.dialogue" id="1_isbpx"]
+[ext_resource type="SpriteFrames" uid="uid://bahhkv7nkse7f" path="res://assets/animations/buho.tres" id="2_isbpx"]
+[ext_resource type="Texture2D" uid="uid://fs1qsp0ujho3" path="res://assets/dev/png-transparent-pokemon-red-and-blue-pokemon-firered-and-leafgreen-pokemon-heartgold-and-soulsilver-sprite-sprite-text-rectangle-symmetry-585838136.png" id="3_ukbw4"]
+[ext_resource type="Script" uid="uid://bh1caj7euko2j" path="res://scripts/character_def.gd" id="4_1p7c5"]
+
+[resource]
+script = ExtResource("4_1p7c5")
+frames = ExtResource("2_isbpx")
+portrait = ExtResource("3_ukbw4")
+dialogue_resource = ExtResource("1_isbpx")
+metadata/_custom_type_script = "uid://bh1caj7euko2j"

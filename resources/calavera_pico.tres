@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CharacterDef" load_steps=5 format=3 uid="uid://72wyq1ny35vr"]
+
+[ext_resource type="Script" uid="uid://bh1caj7euko2j" path="res://scripts/character_def.gd" id="1_asegv"]
+[ext_resource type="SpriteFrames" uid="uid://e2nc44yujyfp" path="res://assets/animations/calavera_pico.tres" id="1_lcctj"]
+[ext_resource type="Resource" uid="uid://b7egtgtjwwk4x" path="res://assets/dialogue/calavera_pico.dialogue" id="1_ybnua"]
+[ext_resource type="Texture2D" uid="uid://bow87da32vswu" path="res://assets/dev/mewtwo2.png" id="3_t80fc"]
+
+[resource]
+script = ExtResource("1_asegv")
+frames = ExtResource("1_lcctj")
+portrait = ExtResource("3_t80fc")
+dialogue_resource = ExtResource("1_ybnua")
+metadata/_custom_type_script = "uid://bh1caj7euko2j"

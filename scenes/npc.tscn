@@ -1,21 +1,31 @@
-[gd_scene load_steps=3 format=3 uid="uid://c4a7hldv5kyql"]
+[gd_scene load_steps=5 format=3 uid="uid://c4a7hldv5kyql"]
 
-[ext_resource type="Texture2D" uid="uid://drevkqfvbpo75" path="res://assets/dev/mewtwo.png" id="1_nh2m4"]
+[ext_resource type="Script" uid="uid://swwkas82vwvk" path="res://scenes/npc.gd" id="1_abqhh"]
+[ext_resource type="PackedScene" uid="uid://dwwy8p6o5gbyw" path="res://scenes/actionable.tscn" id="2_rv78h"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tcuxl"]
 radius = 14.0
 height = 38.0
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_4wlns"]
+
 [node name="NPC" type="Node2D"]
 scale = Vector2(2, 2)
+script = ExtResource("1_abqhh")
 
-[node name="visual" type="Sprite2D" parent="."]
-position = Vector2(-1.2499986, -5.250001)
-scale = Vector2(0.40625003, 0.45625)
-texture = ExtResource("1_nh2m4")
+[node name="visual" type="AnimatedSprite2D" parent="."]
+position = Vector2(-0.648438, -2.3315578)
+scale = Vector2(1.5212052, 1.7084305)
+autoplay = "default"
 
 [node name="body" type="StaticBody2D" parent="."]
 
 [node name="body shape" type="CollisionShape2D" parent="body"]
 position = Vector2(0, -1.5)
 shape = SubResource("CapsuleShape2D_tcuxl")
+
+[node name="Actionable" parent="." instance=ExtResource("2_rv78h")]
+scale = Vector2(2, 2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actionable"]
+shape = SubResource("CircleShape2D_4wlns")

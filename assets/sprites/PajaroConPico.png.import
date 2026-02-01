@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://byaw1mvbt2go2"
-path="res://.godot/imported/muebles.png-b665edf52f30e4fecc4be41355efcc03.ctex"
+uid="uid://du2nofadtdq3l"
+path="res://.godot/imported/PajaroConPico.png-44d620253cdd483d6d1b00789a6d1dac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tiles/muebles.png"
-dest_files=["res://.godot/imported/muebles.png-b665edf52f30e4fecc4be41355efcc03.ctex"]
+source_file="res://assets/sprites/PajaroConPico.png"
+dest_files=["res://.godot/imported/PajaroConPico.png-44d620253cdd483d6d1b00789a6d1dac.ctex"]
 
 [params]
 

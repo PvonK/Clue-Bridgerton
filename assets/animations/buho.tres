@@ -1,0 +1,25 @@
+[gd_resource type="SpriteFrames" load_steps=4 format=3 uid="uid://bahhkv7nkse7f"]
+
+[ext_resource type="Texture2D" uid="uid://b70prkvox4jtb" path="res://assets/sprites/BuhoRosaSpritesheet.png" id="1_u7ehn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rv78h"]
+atlas = ExtResource("1_u7ehn")
+region = Rect2(0, 0, 14, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7n8xq"]
+atlas = ExtResource("1_u7ehn")
+region = Rect2(14, 0, 14, 20)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rv78h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7n8xq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]

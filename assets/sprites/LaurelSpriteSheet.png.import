@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://byaw1mvbt2go2"
-path="res://.godot/imported/muebles.png-b665edf52f30e4fecc4be41355efcc03.ctex"
+uid="uid://bv2475dk1uxtw"
+path="res://.godot/imported/LaurelSpriteSheet.png-22830dc6eb49fcf05ead5474676c2e07.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tiles/muebles.png"
-dest_files=["res://.godot/imported/muebles.png-b665edf52f30e4fecc4be41355efcc03.ctex"]
+source_file="res://assets/sprites/LaurelSpriteSheet.png"
+dest_files=["res://.godot/imported/LaurelSpriteSheet.png-22830dc6eb49fcf05ead5474676c2e07.ctex"]
 
 [params]
 

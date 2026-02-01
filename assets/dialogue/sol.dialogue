@@ -1,0 +1,9 @@
+~ Start
+La moda es un arte íntimo… algunos diseños requieren muchas pruebas.
+Hay heridas que ni el oro ni los favores pueden curar. Algunos bailan hoy… y no mañana.
+- Continuar => Start
+- Descartar => END
+- Elegir
+	¡Excelente elección.Tendrás vestidos gratis… siempre y cuando no te moleste que ame a la modista
+	Digámoslo todo\: estaba cantado. Pero bueno… los vestidos gratis son los vestidos gratis.
+=> END

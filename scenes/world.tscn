@@ -1,12 +1,16 @@
-[gd_scene load_steps=7 format=3 uid="uid://b3xqishcrfpjd"]
+[gd_scene load_steps=12 format=3 uid="uid://b3xqishcrfpjd"]
 
 [ext_resource type="PackedScene" uid="uid://b1xwyabboxfe" path="res://scenes/Player.tscn" id="1_nnsk1"]
 [ext_resource type="Texture2D" uid="uid://pm5vqovjy58g" path="res://assets/dev/S.S._Anne_Ballroom-3556446786.png" id="2_rwgxs"]
 [ext_resource type="PackedScene" uid="uid://c4a7hldv5kyql" path="res://scenes/npc.tscn" id="3_4wyf3"]
-[ext_resource type="PackedScene" uid="uid://dwwy8p6o5gbyw" path="res://scenes/actionable.tscn" id="4_k0juu"]
-[ext_resource type="Resource" uid="uid://cg23y481hta2i" path="res://assets/dialogue/test.dialogue" id="5_71j4m"]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_71j4m"]
+[ext_resource type="Resource" uid="uid://72wyq1ny35vr" path="res://resources/calavera_pico.tres" id="4_k0juu"]
+[ext_resource type="Resource" uid="uid://bpjp742muuwn" path="res://resources/buho.tres" id="5_71j4m"]
+[ext_resource type="Resource" uid="uid://ca5htudol3upl" path="res://resources/gato.tres" id="6_qfnet"]
+[ext_resource type="Resource" uid="uid://c25e0svmt6th5" path="res://resources/sol.tres" id="7_i7141"]
+[ext_resource type="TileSet" uid="uid://dkstokk0aqqbs" path="res://assets/tiles/tileset/room.tres" id="8_4mrxx"]
+[ext_resource type="Resource" uid="uid://rk065qibm7py" path="res://resources/pajaro_pico.tres" id="9_7r4gi"]
+[ext_resource type="Resource" uid="uid://c88oqtxtppgb0" path="res://resources/fuego.tres" id="10_e3hyu"]
+[ext_resource type="Resource" uid="uid://din5fn76xwlo4" path="res://resources/laurel.tres" id="11_q5onr"]
 
 [node name="world" type="Node2D"]
 
@@ -16,6 +20,9 @@ offset_top = -766.0
 offset_right = 1931.0
 offset_bottom = 1414.041
 texture = ExtResource("2_rwgxs")
+
+[node name="Room" type="TileMapLayer" parent="."]
+tile_set = ExtResource("8_4mrxx")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(5, 1)
@@ -27,21 +34,29 @@ anchor_mode = 0
 position = Vector2(750, 600)
 
 [node name="NPC" parent="Actors" instance=ExtResource("3_4wyf3")]
-position = Vector2(700, 500)
-
-[node name="Actionable" parent="Actors/NPC" instance=ExtResource("4_k0juu")]
-scale = Vector2(2, 2)
-dialogue_resource = ExtResource("5_71j4m")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Actors/NPC/Actionable"]
-shape = SubResource("CircleShape2D_71j4m")
+position = Vector2(1127, 714)
+definition = ExtResource("4_k0juu")
 
 [node name="NPC2" parent="Actors" instance=ExtResource("3_4wyf3")]
-position = Vector2(1000, 335.3)
+position = Vector2(1122, 368)
+definition = ExtResource("5_71j4m")
 
-[node name="Actionable" parent="Actors/NPC2" instance=ExtResource("4_k0juu")]
-scale = Vector2(2, 2)
-dialogue_resource = ExtResource("5_71j4m")
+[node name="NPC3" parent="Actors" instance=ExtResource("3_4wyf3")]
+position = Vector2(825, 318)
+definition = ExtResource("6_qfnet")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Actors/NPC2/Actionable"]
-shape = SubResource("CircleShape2D_71j4m")
+[node name="NPC4" parent="Actors" instance=ExtResource("3_4wyf3")]
+position = Vector2(809, 772)
+definition = ExtResource("7_i7141")
+
+[node name="NPC5" parent="Actors" instance=ExtResource("3_4wyf3")]
+position = Vector2(1174, 548)
+definition = ExtResource("9_7r4gi")
+
+[node name="NPC6" parent="Actors" instance=ExtResource("3_4wyf3")]
+position = Vector2(976, 779)
+definition = ExtResource("10_e3hyu")
+
+[node name="NPC7" parent="Actors" instance=ExtResource("3_4wyf3")]
+position = Vector2(742, 456)
+definition = ExtResource("11_q5onr")

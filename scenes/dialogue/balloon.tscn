@@ -1,9 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://umnturmisq3"]
+[gd_scene load_steps=14 format=3 uid="uid://umnturmisq3"]
 
 [ext_resource type="Script" uid="uid://b3ffmdjapyrxo" path="res://scenes/dialogue/balloon.gd" id="1_36de5"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
 [ext_resource type="Texture2D" uid="uid://bow87da32vswu" path="res://assets/dev/mewtwo2.png" id="2_ithk8"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="3_72ixx"]
+[ext_resource type="Texture2D" uid="uid://d3t2l1sowxv18" path="res://assets/sprites/MarcoDialogo.png" id="3_t5syq"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
 bg_color = Color(0, 0, 0, 1)
@@ -138,13 +139,17 @@ offset_top = -219.0
 grow_horizontal = 2
 grow_vertical = 0
 
-[node name="PanelContainer" type="PanelContainer" parent="Balloon/MarginContainer"]
+[node name="PanelContainer" type="TextureRect" parent="Balloon/MarginContainer"]
 clip_children = 2
 layout_mode = 2
-mouse_filter = 1
+texture = ExtResource("3_t5syq")
 
 [node name="MarginContainer" type="MarginContainer" parent="Balloon/MarginContainer/PanelContainer"]
-layout_mode = 2
+layout_mode = 0
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 1857.0
+offset_bottom = 186.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Balloon/MarginContainer/PanelContainer/MarginContainer"]
 layout_mode = 2
@@ -155,9 +160,10 @@ size_flags_horizontal = 3
 
 [node name="CharacterLabel" type="RichTextLabel" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer/VBoxContainer"]
 unique_name_in_owner = true
-modulate = Color(1, 1, 1, 0.501961)
+self_modulate = Color(0.27246928, 0.13664079, 0.020649055, 1)
 layout_mode = 2
 mouse_filter = 1
+theme_override_font_sizes/normal_font_size = 30
 bbcode_enabled = true
 text = "Character"
 fit_content = true
@@ -165,8 +171,10 @@ scroll_active = false
 
 [node name="DialogueLabel" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer/VBoxContainer" instance=ExtResource("2_a8ve6")]
 unique_name_in_owner = true
+self_modulate = Color(0.60784316, 0, 0, 1)
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_font_sizes/normal_font_size = 30
 text = "Dialogue..."
 
 [node name="Control" type="Control" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer"]

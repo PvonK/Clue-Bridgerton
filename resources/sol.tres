@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CharacterDef" load_steps=5 format=3 uid="uid://c25e0svmt6th5"]
+
+[ext_resource type="Resource" uid="uid://cg23y481hta2i" path="res://assets/dialogue/test.dialogue" id="1_w3d24"]
+[ext_resource type="SpriteFrames" uid="uid://stu526m5ckyi" path="res://assets/animations/sol.tres" id="2_w3d24"]
+[ext_resource type="Texture2D" uid="uid://brsj65j1ee34q" path="res://assets/sprites/SolSpritesheet.png" id="3_2bcqa"]
+[ext_resource type="Script" uid="uid://bh1caj7euko2j" path="res://scripts/character_def.gd" id="4_1vdyb"]
+
+[resource]
+script = ExtResource("4_1vdyb")
+frames = ExtResource("2_w3d24")
+portrait = ExtResource("3_2bcqa")
+dialogue_resource = ExtResource("1_w3d24")
+metadata/_custom_type_script = "uid://bh1caj7euko2j"

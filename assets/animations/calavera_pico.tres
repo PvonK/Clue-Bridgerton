@@ -1,0 +1,25 @@
+[gd_resource type="SpriteFrames" load_steps=4 format=3 uid="uid://e2nc44yujyfp"]
+
+[ext_resource type="Texture2D" uid="uid://csrwsa0bjffbc" path="res://assets/sprites/CalaveraPicoSpritesheet.png" id="1_dvb6c"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dvb6c"]
+atlas = ExtResource("1_dvb6c")
+region = Rect2(0, 0, 14, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xy0b8"]
+atlas = ExtResource("1_dvb6c")
+region = Rect2(14, 0, 14, 20)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dvb6c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xy0b8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]

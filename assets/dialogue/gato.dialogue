@@ -1,0 +1,9 @@
+~ Start
+Gato: Mi familia es… muy unida. Tanto, que a veces el árbol genealógico parece un círculo… Pero ¡Hey! al menos mi sangre es la más pura.
+Gato: Hay personas cuya laaaarga historia pesa más que su presente… Personas con máscaras blancas
+- Continuar => Start
+- Descartar => END
+- Elegir
+	Gato: El hecho de que mis papás sean primos no me hace menos hombre.. puedes corroborarlo con mis tres pastelitos…
+	Bueno… al menos la herencia queda entre pocos. Si no contamos a los bastardos, claro.
+=> END
