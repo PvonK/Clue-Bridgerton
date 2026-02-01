@@ -11,7 +11,6 @@
 [ext_resource type="Resource" uid="uid://rk065qibm7py" path="res://resources/pajaro_pico.tres" id="9_7r4gi"]
 [ext_resource type="Resource" uid="uid://c88oqtxtppgb0" path="res://resources/fuego.tres" id="10_e3hyu"]
 [ext_resource type="Resource" uid="uid://din5fn76xwlo4" path="res://resources/laurel.tres" id="11_q5onr"]
-[ext_resource type="AudioStream" uid="uid://csy7vk8hhoynt" path="res://audio/Versión inspirada en The Scientist (Coldplay) 8bit + Strigns.ogg" id="12_q5onr"]
 [ext_resource type="Resource" uid="uid://ci8b56n6buhgs" path="res://resources/bufon.tres" id="12_q5onr"]
 
 [node name="world" type="Node2D"]
@@ -63,9 +62,9 @@ definition = ExtResource("10_e3hyu")
 position = Vector2(742, 456)
 definition = ExtResource("11_q5onr")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("12_q5onr")
-autoplay = true
 [node name="NPC8" parent="Actors" instance=ExtResource("3_4wyf3")]
 position = Vector2(987, 322)
 definition = ExtResource("12_q5onr")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+autoplay = true

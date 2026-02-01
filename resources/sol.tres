@@ -2,12 +2,11 @@
 
 [ext_resource type="Resource" uid="uid://3qd1ejnm5q65" path="res://assets/dialogue/sol.dialogue" id="1_w3d24"]
 [ext_resource type="SpriteFrames" uid="uid://stu526m5ckyi" path="res://assets/animations/sol.tres" id="2_w3d24"]
-[ext_resource type="Texture2D" uid="uid://brsj65j1ee34q" path="res://assets/sprites/SolSpritesheet.png" id="3_2bcqa"]
-[ext_resource type="Script" uid="uid://bh1caj7euko2j" path="res://scripts/character_def.gd" id="4_1vdyb"]
+[ext_resource type="Texture2D" uid="uid://cedh14g77r366" path="res://assets/sprites/closeUps/SolCloseup.png" id="3_w3d24"]
+[ext_resource type="Script" path="res://scripts/character_def.gd" id="4_1vdyb"]
 
 [resource]
 script = ExtResource("4_1vdyb")
 frames = ExtResource("2_w3d24")
-portrait = ExtResource("3_2bcqa")
+portrait = ExtResource("3_w3d24")
 dialogue_resource = ExtResource("1_w3d24")
-metadata/_custom_type_script = "uid://bh1caj7euko2j"

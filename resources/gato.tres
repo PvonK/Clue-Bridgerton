@@ -2,12 +2,11 @@
 
 [ext_resource type="Resource" uid="uid://cbknbsanna30x" path="res://assets/dialogue/gato.dialogue" id="1_m5w7m"]
 [ext_resource type="SpriteFrames" uid="uid://bs01qlnr317n3" path="res://assets/animations/gato.tres" id="2_m5w7m"]
-[ext_resource type="Texture2D" uid="uid://bow87da32vswu" path="res://assets/dev/mewtwo2.png" id="3_k6x3o"]
-[ext_resource type="Script" uid="uid://bh1caj7euko2j" path="res://scripts/character_def.gd" id="4_wtr83"]
+[ext_resource type="Texture2D" uid="uid://bu87qjg3yu8kk" path="res://assets/sprites/closeUps/GatoAzulCloseup.png" id="3_m5w7m"]
+[ext_resource type="Script" path="res://scripts/character_def.gd" id="4_wtr83"]
 
 [resource]
 script = ExtResource("4_wtr83")
 frames = ExtResource("2_m5w7m")
-portrait = ExtResource("3_k6x3o")
+portrait = ExtResource("3_m5w7m")
 dialogue_resource = ExtResource("1_m5w7m")
-metadata/_custom_type_script = "uid://bh1caj7euko2j"
