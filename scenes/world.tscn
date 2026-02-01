@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://b3xqishcrfpjd"]
+[gd_scene load_steps=20 format=3 uid="uid://b3xqishcrfpjd"]
 
 [ext_resource type="PackedScene" uid="uid://b1xwyabboxfe" path="res://scenes/Player.tscn" id="1_nnsk1"]
 [ext_resource type="Texture2D" uid="uid://pm5vqovjy58g" path="res://assets/dev/S.S._Anne_Ballroom-3556446786.png" id="2_rwgxs"]
@@ -14,6 +14,7 @@
 [ext_resource type="Resource" uid="uid://ci8b56n6buhgs" path="res://resources/bufon.tres" id="12_q5onr"]
 [ext_resource type="Texture2D" uid="uid://dcm0i6te38m62" path="res://assets/sprites/splashScreen.png" id="13_jhx03"]
 [ext_resource type="Script" uid="uid://ddsgwde2h8dn" path="res://scenes/fadeOut.gd" id="13_o8fc1"]
+[ext_resource type="PackedScene" uid="uid://c5niuualgo2jw" path="res://scenes/habitacion.tscn" id="14_pm21f"]
 [ext_resource type="AudioStream" uid="uid://csy7vk8hhoynt" path="res://audio/Versión inspirada en The Scientist (Coldplay) 8bit + Strigns.ogg" id="15_7t5mc"]
 [ext_resource type="SpriteFrames" uid="uid://c0aa1g02064c3" path="res://assets/animations/yellow_firework.tres" id="16_7t5mc"]
 [ext_resource type="Script" path="res://scenes/end_screen.gd" id="16_lakw3"]
@@ -35,7 +36,11 @@ tile_set = ExtResource("8_4mrxx")
 position = Vector2(5, 1)
 anchor_mode = 0
 
+[node name="Habitacion" parent="." instance=ExtResource("14_pm21f")]
+position = Vector2(0, -50)
+
 [node name="Actors" type="Node2D" parent="."]
+position = Vector2(10, 50)
 
 [node name="PLayer" parent="Actors" instance=ExtResource("1_nnsk1")]
 position = Vector2(750, 600)
