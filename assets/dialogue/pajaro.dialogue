@@ -9,5 +9,6 @@ Pajaro: Algunos  gatos p-pre-presumen pureza de sangre… pero esconden más ba-
 	Que largo todooo…
 	Ojalá la fortuna fuera igual de prolongada.
 	Pero no. Todo lo contrario.
+	set State.game_lost = true
 
 => END

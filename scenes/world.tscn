@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://b3xqishcrfpjd"]
+[gd_scene load_steps=24 format=3 uid="uid://b3xqishcrfpjd"]
 
 [ext_resource type="PackedScene" uid="uid://b1xwyabboxfe" path="res://scenes/Player.tscn" id="1_nnsk1"]
 [ext_resource type="Texture2D" uid="uid://pm5vqovjy58g" path="res://assets/dev/S.S._Anne_Ballroom-3556446786.png" id="2_rwgxs"]
@@ -14,14 +14,16 @@
 [ext_resource type="Resource" uid="uid://ci8b56n6buhgs" path="res://resources/bufon.tres" id="12_q5onr"]
 [ext_resource type="Texture2D" uid="uid://dcm0i6te38m62" path="res://assets/sprites/splashScreen.png" id="13_jhx03"]
 [ext_resource type="Script" uid="uid://ddsgwde2h8dn" path="res://scenes/fadeOut.gd" id="13_o8fc1"]
-[ext_resource type="PackedScene" uid="uid://c5niuualgo2jw" path="res://scenes/habitacion.tscn" id="14_pm21f"]
+[ext_resource type="PackedScene" path="res://scenes/habitacion.tscn" id="14_pm21f"]
 [ext_resource type="AudioStream" uid="uid://csy7vk8hhoynt" path="res://audio/Versión inspirada en The Scientist (Coldplay) 8bit + Strigns.ogg" id="15_7t5mc"]
 [ext_resource type="SpriteFrames" uid="uid://847mwhncixaa" path="res://assets/animations/yellow_firework.tres" id="16_7t5mc"]
 [ext_resource type="Script" uid="uid://bs0ds15xor84l" path="res://scenes/end_screen.gd" id="16_lakw3"]
 [ext_resource type="SpriteFrames" uid="uid://cctbt4m2vac2i" path="res://assets/animations/red_firework.tres" id="17_lakw3"]
 [ext_resource type="SpriteFrames" uid="uid://ci3b4i1nsooen" path="res://assets/animations/pink_firework.tres" id="17_pm21f"]
+[ext_resource type="AudioStream" uid="uid://cb15bedc47032" path="res://audio/victoria_2_Dofus_Ark.mp3" id="21_7iits"]
 
 [sub_resource type="SystemFont" id="SystemFont_pm21f"]
+subpixel_positioning = 0
 
 [sub_resource type="LabelSettings" id="LabelSettings_pm21f"]
 font = SubResource("SystemFont_pm21f")
@@ -191,3 +193,6 @@ text = "GANASTE!"
 label_settings = SubResource("LabelSettings_pm21f")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="victoriaAudio" type="AudioStreamPlayer2D" parent="endscreen"]
+stream = ExtResource("21_7iits")

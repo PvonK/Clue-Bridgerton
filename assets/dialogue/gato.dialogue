@@ -6,4 +6,5 @@ Gato: Hay personas cuya laaaarga historia pesa más que su presente… Personas 
 - Elegir
 	Gato: El hecho de que mis papás sean primos no me hace menos hombre.. puedes corroborarlo con mis tres pastelitos…
 	Bueno… al menos la herencia queda entre pocos. Si no contamos a los bastardos, claro.
+	set State.game_lost = true
 => END

@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://d0cxd1e351suk"]
+[gd_scene load_steps=14 format=3 uid="uid://dkgr87yfslovq"]
 
 [ext_resource type="Script" uid="uid://c011oj51ergm6" path="res://scenes/dialogueTutorial/balloon.gd" id="1_m5m0l"]
 [ext_resource type="Texture2D" uid="uid://yut6wgrw2uul" path="res://assets/sprites/closeUps/PrincipalCloseupHD.png" id="2_m5m0l"]
@@ -189,7 +189,7 @@ unique_name_in_owner = true
 self_modulate = Color(0.60784316, 0, 0, 1)
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_font_sizes/normal_font_size = 30
+theme_override_font_sizes/normal_font_size = 40
 text = "Dialogue..."
 
 [node name="Control" type="Control" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer"]

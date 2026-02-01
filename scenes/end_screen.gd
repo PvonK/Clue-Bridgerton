@@ -10,6 +10,9 @@ extends CanvasLayer
 @onready var animated_sprite_2d_7: AnimatedSprite2D = $"../endscreen/AnimatedSprite2D7"
 @onready var animated_sprite_2d_6: AnimatedSprite2D = $"../endscreen/AnimatedSprite2D6"
 @onready var label: Label = $Label
+@onready var splash_texture: TextureRect = $BG/SplashTexture
+@onready var audio_stream_player_2d: AudioStreamPlayer2D = $"../AudioStreamPlayer2D"
+@onready var victoria_audio: AudioStreamPlayer2D = $victoriaAudio
 
 
 func _ready():
@@ -29,6 +32,9 @@ func _ready():
 func _process(delta: float) -> void:
 	if State.game_ended:
 		visible = true
+		audio_stream_player_2d.stop()
+		victoria_audio.playing = true
+
 	if State.game_lost:
 		visible = true
 		sprite1.visible = false
@@ -40,6 +46,12 @@ func _process(delta: float) -> void:
 		animated_sprite_2d_7.visible = false
 		animated_sprite_2d_8.visible = false
 		label.text = "PERDISTE"
+		splash_texture.texture = load("res://addons/dialogue_manager/assets/icon.svg")
+		audio_stream_player_2d.stop()
+		#victoria_audio.playing = true
+		#victoria_audio.play()
+
+
 
 func randomize_sprite(sprite: Node2D):
 	var viewport_size = Vector2(1920, 1080)

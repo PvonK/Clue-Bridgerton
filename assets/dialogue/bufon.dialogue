@@ -6,4 +6,5 @@ Bufon: Ese laurel marchito… ni siquiera sabe vestirse para un baile real.
 - Elegir
 	Bufon: ¡Seremos felices! En las 36 horas que me restan de vida. Dios perdona pero mi herida no
 	Ese complejo de salvadora llegó demasiado lejos. Veremos si también podéis hacer milagros.
+	set State.game_lost = true
 => END

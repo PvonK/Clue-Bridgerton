@@ -8,4 +8,5 @@ Sol: Hay heridas que ni el oro ni los favores pueden curar. Algunos bufones bail
 - Elegir
 	Sol: ¡Excelente elección.Tendrás vestidos gratis… siempre y cuando no te moleste que ame a la modista
 	Digámoslo todo\: estaba cantado. Pero bueno… los vestidos gratis son los vestidos gratis.
+	set State.game_lost = true
 => END

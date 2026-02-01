@@ -7,4 +7,5 @@ Calavera: ¿Fuego Naranja? Demasiado confiado en su suerte… cuando uno juega t
 - Elegir
 	Calavera Pico: Soy digno de admirar… ¡Llegue a esta edad incluso padeciendo sífilis! No cualquiera…
 	Elegisteis a un sexagenario con sífilis. Vuestra intuición es tan afilada como la dentadura postiza de tu futuro esposo.
+	set State.game_lost = true
 => END
