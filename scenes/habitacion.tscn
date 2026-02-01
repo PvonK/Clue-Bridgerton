@@ -1,16 +1,87 @@
-[gd_scene load_steps=2 format=3 uid="uid://c5niuualgo2jw"]
+[gd_scene load_steps=6 format=3 uid="uid://c5niuualgo2jw"]
 
-[ext_resource type="Texture2D" uid="uid://cqe4yfk32jnfx" path="res://assets/sprites/BufonSpritesheet.png" id="1_78xi2"]
+[ext_resource type="Texture2D" uid="uid://ddh8uixjncaqg" path="res://assets/tiles/imagen referencia habitacion completa.jpg" id="1_mcg1f"]
+[ext_resource type="Texture2D" uid="uid://caksi0stf5omd" path="res://assets/tiles/pista de baile.png" id="2_8wdox"]
+[ext_resource type="Texture2D" uid="uid://dd6j3svywhfd" path="res://assets/tiles/fuenteDeAgua.png" id="3_7rbdm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mcg1f"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8wdox"]
 
 [node name="Habitacion" type="Node2D"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 offset_right = 1920.0
 offset_bottom = 1076.0
 
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 1038.0
-offset_top = 161.0
-offset_right = 1336.0
-offset_bottom = 546.0
-texture = ExtResource("1_78xi2")
+[node name="Habitacion" type="TextureRect" parent="."]
+offset_right = 1924.9999
+offset_bottom = 1100.0
+scale = Vector2(1.0047495, 1.0047495)
+texture = ExtResource("1_mcg1f")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Habitacion"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Habitacion/StaticBody2D"]
+position = Vector2(371, 364)
+scale = Vector2(13.959481, 13.959481)
+shape = SubResource("CircleShape2D_mcg1f")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Habitacion/StaticBody2D"]
+position = Vector2(217, 559)
+scale = Vector2(13.363672, 13.363672)
+shape = SubResource("CircleShape2D_mcg1f")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Habitacion/StaticBody2D"]
+position = Vector2(165, 750.00006)
+scale = Vector2(13.363672, 13.363672)
+shape = SubResource("CircleShape2D_mcg1f")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Habitacion/StaticBody2D"]
+position = Vector2(141, 985)
+scale = Vector2(13.363672, 13.363672)
+shape = SubResource("CircleShape2D_mcg1f")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Habitacion/StaticBody2D"]
+position = Vector2(1748, 993.00006)
+scale = Vector2(13.363672, 13.363672)
+shape = SubResource("CircleShape2D_mcg1f")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Habitacion/StaticBody2D"]
+position = Vector2(1740.0001, 772)
+scale = Vector2(13.363672, 13.363672)
+shape = SubResource("CircleShape2D_mcg1f")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Habitacion/StaticBody2D"]
+position = Vector2(1705, 579.00006)
+scale = Vector2(13.363672, 13.363672)
+shape = SubResource("CircleShape2D_mcg1f")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Habitacion/StaticBody2D"]
+position = Vector2(1561, 349)
+scale = Vector2(13.363672, 13.363672)
+shape = SubResource("CircleShape2D_mcg1f")
+
+[node name="PistaDeBaile" type="TextureRect" parent="."]
+offset_left = -84.0
+offset_top = -141.99998
+offset_right = 1260.0
+offset_bottom = 626.0
+scale = Vector2(1.5775454, 1.6357634)
+texture = ExtResource("2_8wdox")
+
+[node name="FuenteDeAgua" type="TextureRect" parent="."]
+offset_left = 810.0
+offset_top = 410.0
+offset_right = 850.0
+offset_bottom = 450.0
+scale = Vector2(8.316787, 8.316787)
+texture = ExtResource("3_7rbdm")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="FuenteDeAgua"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FuenteDeAgua/StaticBody2D"]
+position = Vector2(20.440586, 22.364407)
+scale = Vector2(1.7954761, 1.7954761)
+shape = SubResource("CircleShape2D_8wdox")
