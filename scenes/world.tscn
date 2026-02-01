@@ -96,7 +96,6 @@ autoplay = true
 
 [node name="SplashScreen" type="CanvasLayer" parent="."]
 layer = 100
-visible = false
 script = ExtResource("13_o8fc1")
 
 [node name="BG" type="ColorRect" parent="SplashScreen"]
@@ -116,7 +115,6 @@ texture = ExtResource("13_jhx03")
 
 [node name="endscreen" type="CanvasLayer" parent="."]
 layer = 100
-visible = false
 script = ExtResource("16_lakw3")
 
 [node name="BG" type="ColorRect" parent="endscreen"]
