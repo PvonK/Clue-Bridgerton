@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://csy7vk8hhoynt"
+path="res://.godot/imported/Versión inspirada en The Scientist (Coldplay) 8bit + Strigns.ogg-9190fc39a42939f351a127302e6bafa5.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/Versión inspirada en The Scientist (Coldplay) 8bit + Strigns.ogg"
+dest_files=["res://.godot/imported/Versión inspirada en The Scientist (Coldplay) 8bit + Strigns.ogg-9190fc39a42939f351a127302e6bafa5.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
