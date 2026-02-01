@@ -69,23 +69,23 @@ position = Vector2(490, 428)
 definition = ExtResource("6_qfnet")
 
 [node name="Sol" parent="Actors" instance=ExtResource("3_4wyf3")]
-position = Vector2(950, 315)
+position = Vector2(756, 339)
 definition = ExtResource("7_i7141")
 
 [node name="Pajaro" parent="Actors" instance=ExtResource("3_4wyf3")]
-position = Vector2(1540, 510)
+position = Vector2(1442, 478)
 definition = ExtResource("9_7r4gi")
 
 [node name="Fuego" parent="Actors" instance=ExtResource("3_4wyf3")]
-position = Vector2(567, 619)
+position = Vector2(752, 636)
 definition = ExtResource("10_e3hyu")
 
 [node name="Laurel" parent="Actors" instance=ExtResource("3_4wyf3")]
-position = Vector2(329, 650)
+position = Vector2(479, 631)
 definition = ExtResource("11_q5onr")
 
 [node name="Bufon" parent="Actors" instance=ExtResource("3_4wyf3")]
-position = Vector2(1170, 773)
+position = Vector2(1175, 763)
 definition = ExtResource("12_q5onr")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
@@ -94,6 +94,7 @@ autoplay = true
 
 [node name="SplashScreen" type="CanvasLayer" parent="."]
 layer = 100
+visible = false
 script = ExtResource("13_o8fc1")
 
 [node name="BG" type="ColorRect" parent="SplashScreen"]
