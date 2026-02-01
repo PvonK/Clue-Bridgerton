@@ -1,11 +1,10 @@
 ~ Start
-Buho: [[Hi|Hello|Howdy]], this is some dialogue.
-Sol: Here are some choices.
-- First one
-	Pico: You picked the first one.
-- Second one
-	Nathan: You picked the second one.
-- Start again => Start
-- End the conversation => END
-Nathan: For more information see the online documentation.
+Sois el diamante de la temporada.
+En el último baile organizado por Lady Smith, deberéis elegir a un único pretendiente entre muchos.
+Elegid con cuidado\: una mala decisión os condenará a un matrimonio desastroso.
+Presionad ↲ para continuar
+
+Usad ⬅ ⬆ ⮕ ⬇ para moveros por la pista de baile
+y ↲ para escuchar sus palabras, descartarlos o elegir a vuestro pretendiente ideal.
+Recordad\: Una vez descartado un pretendiente, no podréis volver a hablar con él.
 => END

@@ -37,6 +37,5 @@ func _unhandled_input(event: InputEvent) -> void:
 func _physics_process(delta: float) -> void:
 	pass
 
-
 func can_talk(actionable):
 	return len(convos_had) < 6 or actionable in convos_had
