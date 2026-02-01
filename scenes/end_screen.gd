@@ -9,6 +9,7 @@ extends CanvasLayer
 @onready var animated_sprite_2d_8: AnimatedSprite2D = $"../endscreen/AnimatedSprite2D8"
 @onready var animated_sprite_2d_7: AnimatedSprite2D = $"../endscreen/AnimatedSprite2D7"
 @onready var animated_sprite_2d_6: AnimatedSprite2D = $"../endscreen/AnimatedSprite2D6"
+@onready var label: Label = $Label
 
 
 func _ready():
@@ -28,6 +29,17 @@ func _ready():
 func _process(delta: float) -> void:
 	if State.game_ended:
 		visible = true
+	if State.game_lost:
+		visible = true
+		sprite1.visible = false
+		sprite2.visible = false
+		animated_sprite_2d_3.visible = false
+		animated_sprite_2d_4.visible = false
+		animated_sprite_2d_5.visible = false
+		animated_sprite_2d_6.visible = false
+		animated_sprite_2d_7.visible = false
+		animated_sprite_2d_8.visible = false
+		label.text = "PERDISTE"
 
 func randomize_sprite(sprite: Node2D):
 	var viewport_size = Vector2(1920, 1080)

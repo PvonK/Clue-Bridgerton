@@ -7,4 +7,5 @@ Buho: *mira a pajaro**cof* “¿Conversar con él? No hablo con los pobres… Si
 - Elegir
 	Buho: “Debo ir a la taberna para festejar.. La última vez me contagié de algo.. ¡Pero es tan divertida!”
 	Consejito\: dormid con barbijo. No solo por el aliento a alcohol… sino por la tuberculosis que ahora llamáis marido.
+	set State.game_lost = true
 => END

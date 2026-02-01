@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://b3xqishcrfpjd"]
+[gd_scene load_steps=22 format=3 uid="uid://b3xqishcrfpjd"]
 
 [ext_resource type="PackedScene" uid="uid://b1xwyabboxfe" path="res://scenes/Player.tscn" id="1_nnsk1"]
 [ext_resource type="Texture2D" uid="uid://pm5vqovjy58g" path="res://assets/dev/S.S._Anne_Ballroom-3556446786.png" id="2_rwgxs"]
@@ -19,6 +19,17 @@
 [ext_resource type="SpriteFrames" uid="uid://c0aa1g02064c3" path="res://assets/animations/yellow_firework.tres" id="16_7t5mc"]
 [ext_resource type="Script" path="res://scenes/end_screen.gd" id="16_lakw3"]
 [ext_resource type="SpriteFrames" uid="uid://bih6w2rufk1d8" path="res://assets/animations/red_firework.tres" id="17_lakw3"]
+[ext_resource type="SpriteFrames" uid="uid://ci3b4i1nsooen" path="res://assets/animations/pink_firework.tres" id="17_pm21f"]
+
+[sub_resource type="SystemFont" id="SystemFont_pm21f"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_pm21f"]
+font = SubResource("SystemFont_pm21f")
+font_size = 170
+font_color = Color(0.71502036, 0.63614523, 0.42288023, 1)
+outline_size = 30
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 3
 
 [node name="world" type="Node2D"]
 
@@ -124,7 +135,7 @@ texture = ExtResource("13_jhx03")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="endscreen"]
 position = Vector2(640.5, 656.5)
 scale = Vector2(2.140625, 1.890625)
-sprite_frames = ExtResource("16_7t5mc")
+sprite_frames = ExtResource("17_pm21f")
 autoplay = "default"
 
 [node name="AnimatedSprite2D6" type="AnimatedSprite2D" parent="endscreen"]
@@ -147,7 +158,7 @@ autoplay = "default"
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="endscreen"]
 position = Vector2(1341, 316)
-sprite_frames = ExtResource("17_lakw3")
+sprite_frames = ExtResource("17_pm21f")
 autoplay = "default"
 
 [node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="endscreen"]
@@ -157,10 +168,26 @@ autoplay = "default"
 
 [node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="endscreen"]
 position = Vector2(1341, 316)
-sprite_frames = ExtResource("17_lakw3")
+sprite_frames = ExtResource("17_pm21f")
 autoplay = "default"
 
 [node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="endscreen"]
 position = Vector2(1341, 316)
 sprite_frames = ExtResource("17_lakw3")
 autoplay = "default"
+
+[node name="Label" type="Label" parent="endscreen"]
+z_index = 4096
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -8.0
+offset_top = 111.0
+offset_right = -8.0
+offset_bottom = 111.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "GANASTE!"
+label_settings = SubResource("LabelSettings_pm21f")
+horizontal_alignment = 1
+vertical_alignment = 1
